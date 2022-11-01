@@ -51,6 +51,7 @@ header {
     padding: 2rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
     background: var(--White);
+    height: 80px;
 }
 
 #menu-btn {
@@ -86,41 +87,35 @@ header {
     color: #16a085;
 }
 
-main {
-    padding: 2rem;
-}
-
-main {
+.heroSection{
     background-color: var(--Light-Grayish-Blue);
     padding-top: 8rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr 1fr));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-
-
 }
 
-.container {
-    flex: 1 1 70rem;
-    display: flex;
-}
 
 .medcineimg {
-    width: 100%;
     height: auto;
-    margin-top: 10rem;
-    object-fit: cover;
-    flex: 1 1 70rem;
-    flex-wrap: wrap;
+    margin-top: 80px;
+    width: 40%;
+    margin: 4rem;
 }
 
-.container .content {
-    padding: 4rem;
+.myimg {
+width: 100%;
+}
+
+ .content {
+    margin: 4rem;
     font-size: 2rem;
+    width: 40%;
+    margin-top: 80px;
 }
 
-.container .content h1 {
+.content h1 {
     margin-top: 10rem;
     font-weight: bolder;
     font-style: normal;
@@ -129,7 +124,7 @@ main {
     line-height: 72px;
 }
 
-.container .content p {
+.content p {
     color: var(--Dark-Blue);
     line-height: 26px;
     font-size: 1.8rem;
@@ -138,7 +133,7 @@ main {
     margin-top: 3rem;
 }
 
-.container .content .btn {
+.content .btn {
     border-color: var(--Green);
     width: 12rem;
     height: 4rem;
@@ -154,7 +149,7 @@ main {
     border-radius: 0.2rem;
 }
 
-.container .content .btn:hover {
+ .content .btn:hover {
     background-color: var(--green);
     color: var(--White);
     cursor: pointer;
@@ -198,7 +193,7 @@ section .sections .text h1 {
 
 section .sections .text p {
     text-align: center;
-     font-size: 2rem; 
+    font-size: 2rem;
 }
 
 .sections {
@@ -305,7 +300,9 @@ section .sections .text p {
 .section {
     margin: 1rem;
     margin-top: -9rem;
+
 }
+
 
 .section .container .content2 h1 {
     font-weight: bolder;
@@ -720,7 +717,44 @@ footer .credit span {
 
 
 
-@media (min-width:320px) {
-html{}
+@media screen and (max-width:320px) {
+    html {
+        font-size: 54%;
+    }
 
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+
+    .medcineimg {
+        align-self: center;
+        width: 100%;
+        margin:0 ;
+    }
+
+    .content{
+        width: 100%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .goodNumbers{
+        margin: 2rem;
+    }
 }
