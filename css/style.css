@@ -1,0 +1,875 @@
+/* Universal selector it will apply all the style to it */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: all 400ms;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* the  colors to use for the project */
+
+:root {
+    --light-color: #777;
+    --green: #16a085;
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(246, 52%, 15%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+html {
+    font-size: 62.25%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+/* it will add a background color to the body */
+
+body {
+    background: var(--Light-Grayish-Blue);
+}
+
+/* This will style  the header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    background: var(--White);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.1rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--ime-Green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.myHeader a {
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.myHeader a i {
+    color: #16a085;
+    font-size: 3rem;
+}
+
+
+.navbar a {
+    color: #444;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.navbar a:hover {
+    color: #16a085;
+}
+
+main {
+    padding: 2rem;
+}
+
+main {
+    background-color: var(--Light-Grayish-Blue);
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr 1fr));
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.container {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .medcineimg {
+    flex: 1 1 70rem;
+} */
+
+.medcineimg {
+    width: 100%;
+    height: auto;
+    margin-top: 10rem;
+    object-fit: cover;
+    flex: 1 1 70rem;
+
+}
+
+.container .content {
+    padding: 4rem;
+}
+
+.container .content h1 {
+    margin-top: 10rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4rem;
+    /* margin: 12px; */
+    text-shadow: 0 .7rem 0.3rem rgba(0, 0, 0, 0.2);
+    line-height: 72px;
+}
+
+.container .content p {
+    color: var(--Dark-Blue);
+    /* margin-bottom: 4rem; */
+    line-height: 26px;
+    font-size: 1.6rem;
+    padding-top: -40rem;
+    font-weight: lighter;
+    margin-top: 3rem;
+    display: flex;
+}
+
+.container .content .btn {
+    border-color: var(--Green);
+    width: 12rem;
+    height: 4rem;
+    color: forestgreen;
+    border-radius: 0.1rem;
+    margin: 1rem;
+    transition: all 300ms ease-in-out;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: solid 3px green;
+    background-color: ghostwhite;
+    border-radius: 0.2rem;
+}
+
+.container .content .btn:hover {
+    background-color: var(--green);
+    color: var(--White);
+    cursor: pointer;
+    width: 13rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+section {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    background: var(--White);
+    height: 100%;
+
+}
+
+section .sections a img {
+    width: 7rem;
+    margin-left: 7.2rem;
+    object-fit: cover;
+}
+
+section .sections a #smallerImg {
+    width: 12rem;
+    margin-left: 5rem;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+section .sections .text h1 {
+    text-align: center;
+    text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #444;
+}
+
+section .sections .text p {
+    text-align: center;
+    /* font-size: 2rem;
+    font-weight: lighter;
+    margin-top: .2rem; */
+}
+
+.sections {
+    margin-top: 4rem;
+    border: #16a085 solid 2px;
+    width: 23rem;
+    height: 20rem;
+    margin: 3px;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+
+}
+
+/* OurSERVICE Section*/
+
+#ourService {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    height: 100%;
+}
+
+#header1 {
+    text-align: center;
+    text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    font-weight: bolder;
+    color: #444;
+    font-size: 5rem;
+    margin-top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header1 span {
+    color: var(--green);
+}
+
+.containers a img {
+    width: 25rem;
+}
+
+.containers {
+    margin-top: -5rem;
+    border: #16a085 solid 3px;
+    width: 34rem;
+    height: 31rem;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+#ourService .containers .content h1 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+    line-height: 42px;
+    color: #444;
+    margin-left: 2rem;
+}
+
+#ourService .containers .content p {
+    color: var(--Dark-Blue);
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #444;
+    line-height: 32px;
+    margin-left: 1rem;
+}
+
+#ourService .containers .content button {
+    border-color: var(--Green);
+    width: 12rem;
+    height: 4rem;
+    color: forestgreen;
+    border-radius: 0.1rem;
+    margin-left: 4rem;
+    transition: all 300ms ease-in-out;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: solid 3px green;
+    background-color: ghostwhite;
+    border-radius: 0.2rem;
+    margin-top: 4rem;
+}
+
+#ourService .containers .content button:hover {
+    background-color: var(--green);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    transform: scaleY(1);
+    width: 13rem;
+}
+
+/* About us section */
+
+.section .container .content2 {
+    margin-top: 5rem;
+}
+
+.section {
+    margin: 1rem;
+    margin-top: -9rem;
+}
+
+.section .container .content2 h1 {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 4rem;
+    text-shadow: 0 .7rem 0.3rem rgba(0, 0, 0, 0.2);
+    line-height: 72px;
+    color: #444;
+}
+
+.section .container .content2 p {
+    color: var(--Dark-Blue);
+    margin-bottom: 4rem;
+    line-height: 26px;
+    font-size: 1.3rem;
+    padding-top: -40rem;
+    font-weight: lighter;
+    padding-left: -3rem;
+
+}
+
+.section .container .content2 button {
+    border-color: var(--Green);
+    width: 12rem;
+    height: 4rem;
+    color: forestgreen;
+    border-radius: 0.1rem;
+    margin: 1rem;
+    transition: all 300ms ease-in-out;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: solid 3px green;
+    background-color: ghostwhite;
+    border-radius: 0.2rem;
+}
+
+.section .container .content2 button:hover {
+    background-color: var(--green);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    transform: scaleY(1);
+    width: 13rem;
+}
+
+/* Our Doctors Section */
+
+.ourDoctors {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.ourDoctors .upper-doctors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ourDoctors .upper-doctors .img {
+    margin-top: -5rem;
+    border: #16a085 solid 3px;
+    width: 34rem;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+.ourDoctors .upper-doctors .img img {
+    width: 300px;
+    height: auto;
+    margin: 2rem;
+    border: #16a085 solid 3px;
+    border-radius: 1rem;
+}
+
+.ourDoctors .upper-doctors .img h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.ourDoctors .upper-doctors .img center span {
+    color: var(--green);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.ourDoctors .upper-doctors .img center .account {
+    font-size: 3rem;
+    margin: .1rem;
+}
+
+.ourDoctors .upper-doctors .img center .account a {
+    color: #16a085;
+}
+
+/* our book now section */
+
+.book-now {
+    margin: 2rem;
+}
+
+.book-now .bookUs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    gap: 2rem;
+}
+
+.book-now .bookUs img {
+    width: 600px;
+}
+
+.book-now .bookUs .form-group {
+    margin-top: -5rem;
+    border: #16a085 solid 2px;
+    width: 50rem;
+    height: 42rem;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+.book-now .bookUs .form-group h1 {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: #444;
+}
+
+.book-now .bookUs .form-group input {
+    border: #16a085 solid 3px;
+    border-radius: 0.3rem;
+    margin-left: 3rem;
+    width: 44rem;
+    margin: 1.1rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+.book-now .bookUs .form-group button {
+    border-color: var(--Green);
+    width: 20rem;
+    height: 5rem;
+    color: forestgreen;
+    border-radius: .5rem;
+    margin: 1rem;
+    transition: all 300ms ease-in-out;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: solid 3px green;
+    background-color: ghostwhite;
+    border-radius: 0.2rem;
+    margin-left: 14rem;
+
+}
+
+.book-now .bookUs .form-group button:hover {
+    background-color: var(--green);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    transform: scaleY(1);
+    width: 13rem;
+}
+
+/* client section */
+
+.clientReview .client {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    margin: 10rem;
+    gap: 2rem;
+    padding-top: -9rem;
+
+}
+
+.clientReview .client .content {
+    border: .2rem solid #16a085;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
+}
+
+
+.clientReview .client .content img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .5rem solid white;
+    object-fit: cover;
+}
+
+
+.clientReview h1 {
+    padding-top: 7rem;
+    padding: .4rem 0;
+}
+
+.clientReview .client .content h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.clientReview .client .content .star i {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.clientReview .client .content p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    padding-top: 4rem;
+}
+
+.clientReview .client .content::before {
+    content: "";
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #16a085;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+
+/*
+my blog section */
+
+.ourBlog {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.ourBlog .upper-blog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ourBlog .upper-blog .img {
+    margin-top: -5rem;
+    border: #16a085 solid 3px;
+    width: 35rem;
+    height: 55rem;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+.ourBlog .upper-blog .img img {
+    width: 300px;
+    margin: 2rem;
+    border: #16a085 solid 3px;
+    border-radius: 1rem;
+}
+
+.ourBlog .upper-blog .img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: rgb(239, 239, 239, 2px, 7px);
+}
+
+.ourBlog .upper-blog .img .account {
+    margin-left: -3rem;
+    color: #16a085;
+}
+
+.ourBlog .upper-blog .img h1 {
+    font-weight: bolder;
+    font-size: 2.9rem;
+    margin: 1.3rem;
+    line-height: 42px;
+    color: #444;
+}
+
+.ourBlog .upper-blog .img p {
+    color: var(--Dark-Blue);
+    font-size: 1.6rem;
+    margin: 2rem;
+    font-family: serif;
+    color: #444;
+}
+
+.ourBlog .upper-blog .img button {
+    border-color: var(--Green);
+    width: 15rem;
+    height: 4.5rem;
+    color: forestgreen;
+    border-radius: 0.3rem;
+    margin-bottom: 10rem;
+    transition: all 300ms ease-in-out;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border: solid 3px green;
+    background-color: ghostwhite;
+    border-radius: 0.4rem;
+    margin-left: 2rem;
+}
+
+.ourBlog .upper-blog .img button:hover {
+    background-color: var(--green);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    transform: scaleY(1);
+    width: 13rem;
+}
+
+
+/* footer section */
+
+footer {
+    margin: 4rem;
+    background: #f5f5f5;
+}
+
+footer .footer-div {
+    background: #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+footer .footer-div .row {
+    margin: 1rem;
+    color: #444;
+}
+
+footer .footer-div .row h3 {
+    font-size: 2.5rem;
+}
+
+
+footer .footer-div .row li {
+    margin: 2rem;
+}
+
+footer .footer-div .row li a {
+    font-size: 1.6rem;
+    color: #444;
+    font-family: serif;
+}
+
+footer .footer-div .row li a i {
+    color: #16a085;
+    margin-right: 1.5rem;
+}
+
+footer .footer-div .row li a i:hover {
+    letter-spacing: 3rem;
+}
+
+footer .footer-div .row li a:hover {
+    letter-spacing: 2px;
+}
+
+footer .credit {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+footer .credit span {
+    color: var(--ime-Green);
+    font-style: italic;
+}
+
+
+
+
+@media (max-width:320px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--Dark-Blue);
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+    /* .home .image img {
+        width: 30rem;
+    }
+
+    .box-container .box .image img {
+        width: 20rem;
+    }
+
+    .box-container .box {
+        margin: 2rem;
+        margin-left: 9.1rem;
+    }
+
+    .box-container .box h3 {
+        font-size: 3.4rem;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .box-container .box p {
+        font-size: 2rem;
+        font-weight: lighter;
+    } */
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    #myHeader .navbar.active {
+        transform: scaleY(1);
+    }
+
+    #myHeader .navbar a {
+        display: block;
+        background: var(--White);
+        border-radius: .5rem;
+        color: #16a085;
+        margin: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+    }
+
+    /* .container .box .img img {
+        width: 34rem;
+        box-shadow: 2px 2px 3px black;
+    }
+
+
+    .container .box {
+        margin: 1rem;
+        margin-left: 2rem;
+    } */
+}
+
+
+@media (max-width:600px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    main .container {
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .medcineimg img {
+        width: 32rem;
+        height: 35rem;
+        margin-top: 2rem;
+    }
+
+    main .container .content h1 {
+        margin-top: -2rem;
+        line-height: 2;
+    }
+
+    main .container .content p {
+        margin-left: 1rem;
+    }
+
+    /* about us */
+    .section .container {
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .section .container img {
+        width: 32rem;
+        height: 35rem;
+        margin-top: 2rem;
+    }
+
+    .section .container .content2 h1 {
+        margin-top: -1rem;
+        line-height: 1.5;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .section .container .content2 p {
+        margin-left: 3rem;
+    }
+
+    .section .container .content2 button {
+        margin-left: 11rem;
+    }
+
+    /* doctors section */
+    .ourDoctors .upper-doctors{
+        flex-wrap: wrap;
+        margin: 6rem;
+    
+    }
+    .book-now .bookUs{
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .book-now .bookUs img{
+        width: 32rem;
+        height: 35rem;
+        margin-top: 2rem; 
+        padding-left: 16rem;
+    }
+
+    .book-now .bookUs .form-group {
+        height: 39;
+        /* width: 36rem; */
+        
+        /* margin-right: -16rem; */
+    }
+
+    .book-now .bookUs .form-group input{
+        height: 4rem;
+        width: 36rem;
+    }
+
+    .book-now .bookUs .form-group button {
+        margin-left: 11rem;
+    }
+}
