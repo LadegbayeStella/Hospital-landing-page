@@ -33,6 +33,7 @@ html {
 /* it will add a background color to the body */
 
 body {
+    scrollbar-width: 30rem;
     background: var(--Light-Grayish-Blue);
 }
 
@@ -54,7 +55,7 @@ header {
 
 #menu-btn {
     display: none;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     border-radius: .5rem;
     background: #eee;
     color: var(--ime-Green);
@@ -65,7 +66,8 @@ header {
 .myHeader a {
     color: black;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-left: 2rem;
 }
 
 .myHeader a i {
@@ -707,25 +709,78 @@ footer .credit span {
 }
 
 
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
 
 
-@media (max-width:320px) {
-    #menu-btn {
+
+
+ @media (min-width:320px) {
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 5rem;
+        position: relative;
+        font-size: 60%;
+    }
+    /* html{
+        font-size: 40%;
+    }  */
+     #menu-btn {
         display: inline-block;
     }
 
-    myHeader .navbar {
+    .myHeader .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--Dark-Blue);
+        background:#16a085;
         padding: 2rem 0;
         transform: scaleY(0);
         transform-origin: top;
         text-align: center;
+    } 
+
+    main .container{
+        flex-wrap: wrap;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        /* line-height: .4; */
+    }
+    p{
+        font-size: 2rem;
     }
 
+
+    .medcineimg img {
+        /* width: 40rem;
+        height: auto;
+        margin-top: 2rem; */
+        align-items: center;
+        justify-content: center;
+        background-color: rebeccapurple;
+    }
     /* .home .image img {
         width: 30rem;
     }
@@ -750,7 +805,7 @@ footer .credit span {
         font-weight: lighter;
     } */
 
-    .fa-times {
+    /* .fa-times {
         transform: rotate(180deg);
     }
 
@@ -766,7 +821,7 @@ footer .credit span {
         margin: 1.5rem;
         padding: 1rem 2rem;
         font-size: 2.5rem;
-    }
+    } */
 
     /* .container .box .img img {
         width: 34rem;
@@ -781,15 +836,38 @@ footer .credit span {
 }
 
 
-@media (max-width:320px) {
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--Dark-Blue);
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+  
+}
+
+
+@media (max-width:600px) {
 
      html{
-        font-size: 50%;
+        /* font-size: 50.1%; */
     } 
 
     main .container {
         flex-wrap: wrap;
         margin: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
     h1 {
@@ -797,8 +875,8 @@ footer .credit span {
     }
 
     .medcineimg img {
-        width: 32rem;
-        height: 35rem;
+        width: 100%;
+        height: auto;
         margin-top: 2rem;
     }
 
@@ -818,8 +896,8 @@ footer .credit span {
     }
 
     .section .container img {
-        width: 32rem;
-        height: 35rem;
+        width: 100%;
+        height: auto;
         margin-top: 2rem;
     }
 
@@ -852,8 +930,8 @@ footer .credit span {
     }
 
     .book-now .bookUs img{
-        width: 32rem;
-        height: 35rem;
+        width: 100%;
+        height: auto;
         margin-top: 2rem; 
         padding-left: 16rem;
         
