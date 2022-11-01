@@ -782,10 +782,10 @@ footer .credit span {
 
 
 @media (max-width:320px) {
-/* 
-    html{
+
+     html{
         font-size: 50%;
-    } */
+    } 
 
     main .container {
         flex-wrap: wrap;
