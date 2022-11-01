@@ -851,17 +851,15 @@ footer .credit span {
     }
 
     .book-now .bookUs img{
-        width: 32rem;
+        width: 30rem;
         height: 35rem;
         margin-top: 2rem; 
         padding-left: 16rem;
     }
 
     .book-now .bookUs .form-group {
-        height: 39;
-        width: 36rem; 
-        
-         margin-right: -16rem;
+        height:auto;
+    
     }
 
     .book-now .bookUs .form-group input{
