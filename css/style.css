@@ -859,9 +859,9 @@ footer .credit span {
 
     .book-now .bookUs .form-group {
         height: 39;
-        /* width: 36rem; */
+        width: 36rem; 
         
-        /* margin-right: -16rem; */
+         margin-right: -16rem;
     }
 
     .book-now .bookUs .form-group input{
