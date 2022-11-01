@@ -733,7 +733,6 @@ footer .credit span {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 5rem;
         position: relative;
         font-size: 60%;
     }
