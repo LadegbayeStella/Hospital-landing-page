@@ -781,11 +781,11 @@ footer .credit span {
 }
 
 
-@media (max-width:600px) {
-
+@media (max-width:320px) {
+/* 
     html{
-        font-size: 55%;
-    }
+        font-size: 50%;
+    } */
 
     main .container {
         flex-wrap: wrap;
@@ -848,17 +848,19 @@ footer .credit span {
     .book-now .bookUs{
         flex-wrap: wrap;
         margin: 2rem;
+      
     }
 
     .book-now .bookUs img{
-        width: 30rem;
+        width: 32rem;
         height: 35rem;
         margin-top: 2rem; 
         padding-left: 16rem;
+        
     }
 
     .book-now .bookUs .form-group {
-        height:auto;
+        height:39;
     
     }
 
