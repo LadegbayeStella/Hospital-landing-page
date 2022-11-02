@@ -31,3 +31,13 @@
 
 
 let FirstUser = document.querySelector("#user1")
+let phoneNumber = document.querySelector("#user2");
+let Email = document.querySelector("#user3");
+let Date = document.querySelector("#user4");
+
+function login() {
+    let name = FirstUser.value;
+    let number =  phoneNumber.value;
+    let result = name + " Welcome to medCare hospital😍  you've successfully register to medCare hospital " +" we will reach out to you through your number " +  number;
+    alert(result);
+}   
