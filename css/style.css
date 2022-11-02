@@ -87,15 +87,22 @@ header {
     color: #16a085;
 }
 
-.heroSection{
+.heroSection,
+.heroSection2 {
     background-color: var(--Light-Grayish-Blue);
     padding-top: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    /* border: 1px solid black; */
 }
 
+/* for about us section(heroSection2) */
+
+.heroSection2 {
+    padding-top: 0;
+}
 
 .medcineimg {
     height: auto;
@@ -105,10 +112,10 @@ header {
 }
 
 .myimg {
-width: 100%;
+    width: 100%;
 }
 
- .content {
+.content {
     margin: 4rem;
     font-size: 2rem;
     width: 40%;
@@ -149,7 +156,7 @@ width: 100%;
     border-radius: 0.2rem;
 }
 
- .content .btn:hover {
+.content .btn:hover {
     background-color: var(--green);
     color: var(--White);
     cursor: pointer;
@@ -167,7 +174,6 @@ section {
     justify-content: center;
     background: var(--White);
     height: 100%;
-
 }
 
 section .sections a img {
@@ -204,21 +210,9 @@ section .sections .text p {
     margin: 3px;
     border-radius: 1rem;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
-
 }
 
 /* OurSERVICE Section*/
-
-#ourService {
-    padding-top: 10rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-    gap: 1rem;
-    justify-content: center;
-    height: 100%;
-}
 
 #header1 {
     text-align: center;
@@ -226,7 +220,7 @@ section .sections .text p {
     font-weight: bolder;
     color: #444;
     font-size: 5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -234,12 +228,19 @@ section .sections .text p {
     color: var(--green);
 }
 
-.containers a img {
-    width: 25rem;
+#ourService {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .containers {
-    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border: #16a085 solid 3px;
     width: 34rem;
     height: 31rem;
@@ -248,7 +249,23 @@ section .sections .text p {
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
 }
 
-#ourService .containers .content h1 {
+.containers .imageDiv {
+    display: block;
+
+}
+
+.containers div img {
+    width: 30rem;
+    align-self: center;
+}
+
+.contents {
+    text-align: center;
+    width: 100%;
+}
+
+
+#ourService .containers .contents h1 {
     font-weight: bolder;
     font-size: 2.4rem;
     line-height: 42px;
@@ -256,7 +273,7 @@ section .sections .text p {
     margin-left: 2rem;
 }
 
-#ourService .containers .content p {
+#ourService .containers .contents p {
     color: var(--Dark-Blue);
     font-size: 1.6rem;
     font-family: sans-serif;
@@ -265,13 +282,13 @@ section .sections .text p {
     margin-left: 1rem;
 }
 
-#ourService .containers .content button {
+#ourService .containers .contents button {
     border-color: var(--Green);
     width: 12rem;
     height: 4rem;
     color: forestgreen;
     border-radius: 0.1rem;
-    margin-left: 4rem;
+    margin-left: -4rem;
     transition: all 300ms ease-in-out;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
     font-weight: bolder;
@@ -280,9 +297,10 @@ section .sections .text p {
     background-color: ghostwhite;
     border-radius: 0.2rem;
     margin-top: 4rem;
+    align-self: center;
 }
 
-#ourService .containers .content button:hover {
+#ourService .containers .contents button:hover {
     background-color: var(--green);
     color: var(--White);
     cursor: pointer;
@@ -293,9 +311,7 @@ section .sections .text p {
 
 /* About us section */
 
-.section .container .content2 {
-    margin-top: 5rem;
-}
+.section {}
 
 .section {
     margin: 1rem;
@@ -348,6 +364,17 @@ section .sections .text p {
     transform: scaleY(1);
     width: 13rem;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Our Doctors Section */
 
@@ -408,16 +435,16 @@ section .sections .text p {
 
 /* our book now section */
 
-.book-now {
+/* .book-now {
     margin: 2rem;
-}
+} */
 
-.book-now .bookUs {
+.bookUs {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: stretch;
     gap: 2rem;
+    width: 100%;
 }
 
 .book-now .bookUs img {
@@ -427,7 +454,7 @@ section .sections .text p {
 .book-now .bookUs .form-group {
     margin-top: -5rem;
     border: #16a085 solid 2px;
-    width: 45rem;
+    width: 40rem;
     height: 42rem;
     border-radius: 0.5rem;
     margin: 0.1rem;
@@ -446,7 +473,7 @@ section .sections .text p {
     border: #16a085 solid 3px;
     border-radius: 0.3rem;
     margin-left: 3rem;
-    width: 41rem;
+    width: 38rem;
     margin: 1.1rem;
     height: 5rem;
     font-size: 1.5rem;
@@ -467,7 +494,6 @@ section .sections .text p {
     background-color: ghostwhite;
     border-radius: 0.2rem;
     margin-left: 14rem;
-
 }
 
 .book-now .bookUs .form-group button:hover {
@@ -481,16 +507,17 @@ section .sections .text p {
 
 /* client section */
 
-.clientReview .client {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    margin: 10rem;
+
+.client {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     padding-top: -9rem;
-
+    width: 100%;
+    justify-content: center;
 }
 
-.clientReview .client .content {
+.review {
     border: .2rem solid #16a085;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
     border-radius: 0.5rem;
@@ -500,10 +527,11 @@ section .sections .text p {
     overflow: hidden;
     text-align: center;
     z-index: 0;
+    width: 350px;
 }
 
 
-.clientReview .client .content img {
+.review img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
@@ -518,25 +546,25 @@ section .sections .text p {
     padding: .4rem 0;
 }
 
-.clientReview .client .content h2 {
+.review h2 {
     color: white;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
 
-.clientReview .client .content .star i {
+.review .star i {
     color: white;
     font-size: 1.3rem;
 }
 
-.clientReview .client .content p {
+.review p {
     color: #444;
     line-height: 1.8;
     font-size: 1.6rem;
     padding-top: 4rem;
 }
 
-.clientReview .client .content::before {
+.review::before {
     content: "";
     position: absolute;
     top: -4rem;
@@ -742,19 +770,36 @@ footer .credit span {
     .medcineimg {
         align-self: center;
         width: 100%;
-        margin:0 ;
+        margin: 0;
     }
 
-    .content{
+    .content {
         width: 100%;
-        margin:0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .goodNumbers{
+    .goodNumbers {
         margin: 2rem;
     }
+
+    .clientReview {
+        width: 100%;
+    }
+
+    .bookUs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bookUs div {
+        width: 100%;
+        margin: 0;
+        
+    }
+
 }
