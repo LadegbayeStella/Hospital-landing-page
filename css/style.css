@@ -368,47 +368,45 @@ section .sections .text p {
 
 
 
-
-
-
-
-
-
-
-
 /* Our Doctors Section */
 
 .ourDoctors {
     background-color: var(--Light-Grayish-Blue);
 }
 
-.ourDoctors .upper-doctors {
+.ourDoctors {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    height: auto;
 }
 
-.ourDoctors .upper-doctors .img {
-    margin-top: -5rem;
+.ourDoctors .img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border: #16a085 solid 3px;
-    width: 34rem;
-    height: auto;
+    width: 35rem;
+    height: 45rem;
     border-radius: 0.5rem;
     margin: 0.1rem;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
 }
 
-.ourDoctors .upper-doctors .img img {
-    width: 300px;
-    height: auto;
-    margin: 2rem;
+.ourDoctors .img img {
+    width: 80%;
+    height: 60%;
+    align-self: center;
+    justify-content: center;
     border: #16a085 solid 3px;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
-.ourDoctors .upper-doctors .img h1 {
+.ourDoctors .img h1 {
     text-align: center;
     font-weight: bolder;
     font-style: oblique;
@@ -416,7 +414,7 @@ section .sections .text p {
     margin-bottom: 0.3rem;
 }
 
-.ourDoctors .upper-doctors .img center span {
+.ourDoctors .img center span {
     color: var(--green);
     font-size: 1.5rem;
     text-align: center;
@@ -424,13 +422,28 @@ section .sections .text p {
     font-weight: lighter;
 }
 
-.ourDoctors .upper-doctors .img center .account {
+.ourDoctors .img center .account {
     font-size: 3rem;
     margin: .1rem;
 }
 
-.ourDoctors .upper-doctors .img center .account a {
+.ourDoctors .img center .account a {
     color: #16a085;
+    border: #16a085 solid 2px;
+    width: 4.7rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+
+}
+
+.ourDoctors .img center .account a i {
+    margin: 1rem;
+}
+
+.ourDoctors .img center .account a:hover {
+    background-color: #16a085;
+    color: #f5f5f5;
 }
 
 /* our book now section */
@@ -448,13 +461,13 @@ section .sections .text p {
 }
 
 .book-now .bookUs img {
-    width: 600px;
+    width: 100%;
 }
 
 .book-now .bookUs .form-group {
     margin-top: -5rem;
     border: #16a085 solid 2px;
-    width: 40rem;
+    width: 45rem;
     height: 42rem;
     border-radius: 0.5rem;
     margin: 0.1rem;
@@ -473,7 +486,7 @@ section .sections .text p {
     border: #16a085 solid 3px;
     border-radius: 0.3rem;
     margin-left: 3rem;
-    width: 38rem;
+    width: 40rem;
     margin: 1.1rem;
     height: 5rem;
     font-size: 1.5rem;
@@ -499,14 +512,14 @@ section .sections .text p {
 .book-now .bookUs .form-group button:hover {
     background-color: var(--green);
     color: var(--White);
+    font-stretch: semi-expanded;
     cursor: pointer;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
     transform: scaleY(1);
     width: 13rem;
 }
 
-/* client section */
-
+        /* client section */
 
 .client {
     display: flex;
@@ -585,43 +598,58 @@ my blog section */
     background-color: var(--Light-Grayish-Blue);
 }
 
-.ourBlog .upper-blog {
+.ourBlog {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+
 }
 
-.ourBlog .upper-blog .img {
-    margin-top: -5rem;
+.ourBlog .img .icon a {
+    color: #16a085;
+    margin-left: 8rem;
+    font-size: 1rem;
+
+}
+
+.ourBlog .img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     border: #16a085 solid 3px;
     width: 35rem;
-    height: 55rem;
+    /* height: 45rem; */
     border-radius: 0.5rem;
     margin: 0.1rem;
     box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
 }
 
-.ourBlog .upper-blog .img img {
-    width: 300px;
-    margin: 2rem;
+.ourBlog .img img {
+    width: 29rem;
+    align-self: center;
+    justify-content: center;
     border: #16a085 solid 3px;
     border-radius: 1rem;
+    object-fit: cover;
+    margin: 2rem;
 }
 
-.ourBlog .upper-blog .img img:hover {
+.ourBlog .img img:hover {
     cursor: pointer;
+    font-stretch: semi-expanded;
     transform: scale(1.1);
     box-shadow: rgb(239, 239, 239, 2px, 7px);
 }
 
-.ourBlog .upper-blog .img .account {
+.ourBlog .img .account {
     margin-left: -3rem;
     color: #16a085;
 }
 
-.ourBlog .upper-blog .img h1 {
+.ourBlog .img h1 {
     font-weight: bolder;
     font-size: 2.9rem;
     margin: 1.3rem;
@@ -629,7 +657,7 @@ my blog section */
     color: #444;
 }
 
-.ourBlog .upper-blog .img p {
+.ourBlog .img p {
     color: var(--Dark-Blue);
     font-size: 1.6rem;
     margin: 2rem;
@@ -637,7 +665,7 @@ my blog section */
     color: #444;
 }
 
-.ourBlog .upper-blog .img button {
+.ourBlog .img button {
     border-color: var(--Green);
     width: 15rem;
     height: 4.5rem;
@@ -654,7 +682,7 @@ my blog section */
     margin-left: 2rem;
 }
 
-.ourBlog .upper-blog .img button:hover {
+.ourBlog .img button:hover {
     background-color: var(--green);
     color: var(--White);
     cursor: pointer;
@@ -721,8 +749,9 @@ footer .credit {
 }
 
 footer .credit span {
-    color: var(--ime-Green);
+    color:#16a085;
     font-style: italic;
+    font-weight: bolder;
 }
 
 
@@ -747,7 +776,7 @@ footer .credit span {
 
 @media screen and (max-width:320px) {
     html {
-        font-size: 54%;
+        font-size: 40%;
     }
 
     #menu-btn {
@@ -787,19 +816,137 @@ footer .credit span {
     }
 
     .clientReview {
+        height: 70%;
         width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
 
     .bookUs {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .bookUs div {
         width: 100%;
         margin: 0;
-        
+
+    }
+
+    .ourDoctors {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    .row ul a{
+        font-size: 5rem;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 50%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+
+    .medcineimg {
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .goodNumbers {
+        margin: 2rem;
+    }
+
+    .clientReview {
+        height: 70%;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .bookUs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bookUs div {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .ourDoctors {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    .row ul a{
+        font-size: 5rem;
     }
 
 }
