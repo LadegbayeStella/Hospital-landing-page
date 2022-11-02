@@ -41,3 +41,17 @@ function login() {
     let result = name + " Welcome to medCare hospital😍  you've successfully register to medCare hospital " +" we will reach out to you through your number " +  number;
     alert(result);
 }   
+
+// button light mode and dark
+function button() {
+    let text = document.querySelector("h1")
+    let body = document.getElementById("body");
+
+    if (body.style.backgroundColor || text.style.color === "white") {
+        body.style.backgroundColor = "black"
+    }
+    else {
+        body.style.backgroundColor || text.style.color === "black";
+        body.style.backgroundColor = "white"
+    }
+}
