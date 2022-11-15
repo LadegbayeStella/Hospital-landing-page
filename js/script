@@ -55,3 +55,10 @@ function button() {
         body.style.backgroundColor = "white"
     }
 }
+
+AOS.init({
+    duration: "800",
+    delay:"300",
+    easing:"ease",
+  
+});
