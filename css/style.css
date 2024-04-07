@@ -106,15 +106,17 @@ header {
 }
 
 .medcineimg {
+    display: flex;
+    justify-content: center;
     height: auto;
-    margin-top: 80px;
-    width: 40%;
+    margin-top: -190px;
+    width: 50%;
     margin: 4rem;
 
 }
 
 .myimg {
-    width: 100%
+    width: 70%
 }
 
 .content {
@@ -450,16 +452,21 @@ section .sections .text p {
 
 /* our book now section */
 
-/* .book-now {
-    margin: 2rem;
-} */
+.book-now {
+   display: flex;
+  justify-content: center;
+}
+
+#header1 span{
+    text-align: center;
+}
 
 .bookUs {
-    display: flex;
-    flex-wrap: wrap;
+ display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 2rem;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .book-now .bookUs img {
